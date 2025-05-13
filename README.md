@@ -1,26 +1,28 @@
-# Semantic-Image-Segmentation-Methods
+# Semantic Image Segmentation Methods
 
-This repository contains the implementations and results of the development of the random forest algorithm
-and the u-net convolutional model in semantically segmenting images of wild scenes. 
+This repository contains the implementations and results of two semantic image segmentation models: a Random Forest algorithm and a U-Net convolutional neural network. These models were developed to segment images of natural environments, specifically using the WildScenes dataset.
 
-### Results based on Metrics
+### Results Based on Evaluation Metrics
 
-* **The Random Forest Algorithm**
-    * Mean IoU: 0.3147404756238944
-    * Accuracy: 0.6278699239095052
-    * Mean F1: 0.4452154429954437
-* **The U-Net Convolutional Neural Network**
-    * Mean IoU: 0.6020750928429215
-    * Accuracy: 0.8261184692382812
-    * Mean F1: 0.7175161183666644
+* **Random Forest Algorithm**
+  * **Mean IoU**: 0.3147  
+  * **Accuracy**: 0.6279  
+  * **Mean F1**: 0.4452  
+
+* **U-Net Convolutional Neural Network**
+  * **Mean IoU**: 0.6021  
+  * **Accuracy**: 0.8261  
+  * **Mean F1**: 0.7175  
 
 ### Metric Definitions
 
-- **Mean Intersection over Union (Mean IoU)**: The average IoU across all classes. IoU measures the overlap between the predicted segmentation and the ground truth, defined as the area of overlap divided by the area of union.
-  
-- **Accuracy**: The ratio of correctly classified pixels to the total number of pixels in the image. It measures the overall correctness of the model's predictions.
+- **Mean Intersection over Union (Mean IoU)**: The average IoU across all classes. IoU measures the overlap between predicted segmentation and ground truth, calculated as the area of overlap divided by the area of union.
 
-- **Mean F1 Score**: The average of the F1 scores across all classes. The F1 score is the harmonic mean of precision and recall, and it balances the trade-off between the two.
+- **Accuracy**: The proportion of correctly classified pixels relative to the total number of pixels in the image. It reflects overall prediction correctness.
 
-This repository uses the V-01 section of the WildScenes 2D semantic segmentation dataset, containing both labeled images and lidar point clouds in natural environments, to train the two models.  
-Available here: [WildScene2D](https://data.csiro.au/collection/csiro:61541)
+- **Mean F1 Score**: The average F1 score across all classes. The F1 score is the harmonic mean of precision and recall, balancing their trade-off.
+
+### Dataset
+
+The models were trained using the V-01 section of the **WildScenes 2D Semantic Segmentation Dataset**, which includes labeled images and LiDAR point clouds captured in natural outdoor environments.  
+Dataset available here: [WildScene2D](https://data.csiro.au/collection/csiro:61541)
